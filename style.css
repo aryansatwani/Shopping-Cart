@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+padding : 0px
+}
+
+.header{
+    color:rgb(245, 10, 10);
+    text-align:center;
+    font-size:46px;
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: underline;
+    font-style: italics;
+
+}
+
+/*Navigation pane */
+
+#navigationpane{
+    display:flex;
+    flex-direction:column;
+    background-color: gray;
+    height: 16vh;
+    width: 100vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top:10px;
+   border: 2px solid black;
+   border-radius:15px;
+}
+
+img{
+    display:block;
+    width: 50px;
+    height:50px;
+    margin:auto;
+    margin-bottom:2px;
+}
+
+#navigationcontent{
+    display: flex;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+ul li a{
+    padding: 1px;
+    color:white;
+    text-decoration: none;
+    border-radius:10px;
+}
+
+ul li a:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* Section 1*/
+
+/* website background image designing */
+#container1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    font-weight: bold;
+    width: 100vw;
+    height:63vh;
+}
+
+/*Setting the background image using before pseudo selector*/ 
+#container1::before{
+    content:'';
+    background: url("1.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height:59vh;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right:45px;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0.5;
+    border: 2px solid black;
+    border-bottom-left-radius: 100px;
+}
+
+#box1{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.btn{
+    margin-top:15px;
+    border: 3px solid white;
+    border-radius:15px;
+    background-color:yellow;
+    font-size:20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#container3{
+    display: flex;
+    justify-content: space-evenly;
+}
+#box2{
+    width:24vw;
+    height:21vh;
+   box-shadow: 2px 7px 16px 19px;
+     margin-top:51px;
+     margin-bottom: 51px;
+     display: flex;
+    justify-content: center;
+     align-items: flex-end;
+     position: relative;
+     margin-right: 38px;
+     border-radius: 40px;
+}
+#box2::before{
+    content: '';
+    background: url('2.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 24vw;
+    height:21vh;
+    z-index: 1;
+    border-radius: 40px;
+}
+#box3{
+    position: relative;
+    width: 24vw;
+    height: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 2px 7px 16px 19px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    margin-left: 38px;
+    border-radius: 40px;
+}
+#box3::before{
+    content: '';
+    background: url('3.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 24vw;
+    height:16vh;
+    z-index: 1;
+    border-radius: 40px;
+}
+
+#container4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}  
+#row1{
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('a1.jpeg') no-repeat center center/cover; 
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row2{
+    width: 30vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('a2.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row3{
+    width: 30vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('a3.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 50px;
+}
